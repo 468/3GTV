@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>3GTV</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  <script src="./assets/lib/jquery.min.js"></script>
+  <script src="./assets/lib/three.min.js"></script>
+  <script src="./assets/lib/CSS3DRenderer.js"></script>
+  <!-- <script src="./lib/Projector.js"></script> !-->
+  <!--  <script src="./lib/TrackballControls.js"></script>  !-->
+  <script src="./assets/lib/jquery.simplemarquee.js"></script>
+  <script src="./assets/lib/Tween.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+ 
+
+</head>
+<body>
+  <div id='splashscreen'><img src="./assets/img/logo.png" id="splashscreen_logo" alt="3GTV logo"></div>
+  
+  <video loop autoplay id="bgvid"></video>
+
+  <script>
+  var randomvideonumber = Math.floor(Math.random() * 3) + 1   ;
+  console.log('playing video ' + randomvideonumber);
+  $('#bgvid').html('<source src="./assets/video/bg' + randomvideonumber+'_lq.mp4" type="video/mp4" >')
+  </script>
+
+  <div id='logo_container'>
+    <img src='./assets/img/logo.png' id='site_logo' alt='3GTV' class="no_highlight" />
+  </div>
+
+  <main id='phone'>
+  </main>
+
+
+  <div id='footer-triangle'></div>
+
+  <div id='footer'>
+    <div id='footer-close'>x</div>
+    <p id='about_button'>About</p>
+    <p id='external_options'>
+          <div id='options_still'>Still: <span id='options_still_toggle' >Off</span></div>
+          <div id='options_cinema_mode'>Cinema: <span id='cinema_mode_toggle' >Off</span></div>
+          <div id='options_distance'>Zoom Level: <span id='options_distance_up'>-</span> <span id='current_distance' >3</span> <span id='options_distance_down'>+</span> </div>     
+    </p>
+    <p id='credit'>By <a href='http://www.alexandertaylor.org/' target="_blank">Alex Taylor</a>, 2016. 3GTV was commissioned by <a href='http://www.rhizome.org' target="_blank">Rhizome.</a></p>
+  </div>
+
+  <div id='footer-open'>^</div>
+
+  <div id='about-box'>
+    <div id='close-about-box'>x</div>
+    <h1>3gtv</h1>
+
+
+    <p><strong>Controls:</strong>
+      <ul><li>Space: skip</li>
+      <li>M: pause/open menu</li>
+      <li>Scrollwheel: zoom</li></ul></p>
+
+    <div id='trends-chart'>
+      <img src='./assets/img/trendschart.png' /><br>
+      <a href='http://www.google.co.uk/trends/explore?hl=en-US#q=.3gp&cmpt=q&tz=Etc/GMT&tz=Etc/GMT'>View full Google Trends report</a>.
+    </div>
+
+    <p>
+    '3gp' is a largely extinct file container that was most popular during the first wave of video-playing mobile phones - the days of RAZRs and Nokia N70s.<br><br>
+    3GTV is a randomized viewing platform for the one million or so .3gp files that have found their way onto Youtube.<br>
+    </p>
+
+    <p>By <a href='http://www.alexandertaylor.org/' target="_blank">Alex Taylor</a>, 2016. 3GTV was commissioned by <a href='http://www.rhizome.org' target="_blank">Rhizome.</a></p>
+
+    <p><strong>Background video credits (all creative commons):</strong></p>
+    <p><ul>
+  
+    <li>bg1 - https://vimeo.com/134734943</li>
+    <li>bg2 - https://vimeo.com/groups/freehd/videos/123509688</li>
+    <li>bg3 -- http://www.videvo.net/video/timelapse-clouds-3/1348</li>
+    <li>bg4 -- https://vimeo.com/134732332</li>
+  </ul></p>
+
+  </div>
+</body>
+</html>
